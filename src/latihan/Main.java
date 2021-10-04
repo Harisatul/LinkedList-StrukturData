@@ -34,6 +34,9 @@ public class Main {
         list.deleteLast();
         System.out.println(list);
 
+        list.deleteAfter(list.getHead());
+        System.out.println(list);
+
 
 
         // --- FIll Array

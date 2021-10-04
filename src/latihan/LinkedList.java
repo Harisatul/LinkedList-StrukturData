@@ -56,12 +56,14 @@ public class LinkedList{
         return temp;
     }
 
-//    public ListNode deleteAfter(){
-//
-//
-//
-//
-//    }
+    public ListNode deleteAfter(ListNode prev_node){
+
+        ListNode temp;
+        temp = prev_node.getNextNode();
+        prev_node.setNextNode(temp.getNextNode());
+        temp.setNextNode(null);
+        return temp;
+    }
 
     // implementasi delete last
     public ListNode deleteLast(){
